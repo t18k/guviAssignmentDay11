@@ -1,0 +1,266 @@
+.container {
+	margin: 0px 100px;
+	margin-bottom: 500px;
+	font-size: large;
+}
+
+@media screen and (max-width: 686px) {
+	body {
+		font-size: 20px;
+	}
+}
+
+img {
+	height: 200px;
+	width: 20%;
+	border-radius: 25px;
+	opacity: 0.7;
+	filter: grayscale(30%);
+	border: dashed 2px black;
+}
+
+.box-model {
+	width: 300px;
+	border: 15px solid red;
+	padding: 50px;
+	margin: 20px;
+}
+
+.span {
+	text-align: center;
+	border: 3px solid red;
+	padding: 20px;
+	margin: 0px 50px;
+}
+
+.span:hover {
+	font-size: large;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: crimson;
+}
+
+body {
+	background-image: url("media/light.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#borderimg {
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(media/border.png) 30 stretch;
+}
+
+.moved {
+	transform: translate(30px, 30px);
+	width: 160px;
+	height: 160px;
+	background-color: skyblue;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 2;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.guvi {
+	position: absolute;
+	clip: rect(0px, 70px, 80px, 0px);
+}
+
+.first-letter {
+	float: left;
+	width: 0.7em;
+	font-size: 500%;
+	font-family: "Courier New", Courier, monospace;
+	line-height: 80%;
+}
+
+.flex-container {
+	display: flex;
+	background-color: DodgerBlue;
+	flex-direction: row-reverse;
+}
+
+.flex-container > div {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+}
+
+.half-round {
+	margin-left: 300px;
+	border-radius: 50px 0px 30px 0px;
+	background: #73ad21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+.round-left {
+	margin-left: 300px;
+	border-radius: 0px 0px 0px 25px;
+	background: #73ad21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+.opacity:hover {
+	opacity: 1;
+}
+
+.overflow {
+	margin-left: 300px;
+	overflow: scroll;
+	background-color: lightblue;
+	width: 200px;
+	height: 200px;
+}
+
+.rotate {
+	transform: rotate(45deg);
+	margin-left: 300px;
+	width: 100px;
+	height: 100px;
+	background-color: lightgray;
+}
+
+.linear {
+	background: linear-gradient(white, red, blue, green);
+	margin-left: 300px;
+	width: 100px;
+	height: 100px;
+}
+
+.alias {
+	cursor: alias;
+}
+.all-scroll {
+	cursor: all-scroll;
+}
+.auto {
+	cursor: auto;
+}
+.cell {
+	cursor: cell;
+}
+.context-menu {
+	cursor: context-menu;
+}
+.col-resize {
+	cursor: col-resize;
+}
+.copy {
+	cursor: copy;
+}
+.crosshair {
+	cursor: crosshair;
+}
+.default {
+	cursor: default;
+}
+.e-resize {
+	cursor: e-resize;
+}
+.ew-resize {
+	cursor: ew-resize;
+}
+.grab {
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+.grabbing {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+.help {
+	cursor: help;
+}
+.move {
+	cursor: move;
+}
+.n-resize {
+	cursor: n-resize;
+}
+.ne-resize {
+	cursor: ne-resize;
+}
+.nesw-resize {
+	cursor: nesw-resize;
+}
+.ns-resize {
+	cursor: ns-resize;
+}
+.nw-resize {
+	cursor: nw-resize;
+}
+.nwse-resize {
+	cursor: nwse-resize;
+}
+.no-drop {
+	cursor: no-drop;
+}
+.none {
+	cursor: none;
+}
+.not-allowed {
+	cursor: not-allowed;
+}
+.pointer {
+	cursor: pointer;
+}
+.progress {
+	cursor: progress;
+}
+.row-resize {
+	cursor: row-resize;
+}
+.s-resize {
+	cursor: s-resize;
+}
+.se-resize {
+	cursor: se-resize;
+}
+.sw-resize {
+	cursor: sw-resize;
+}
+.text {
+	cursor: text;
+}
+.url {
+	cursor: url(myBall.cur), auto;
+}
+.w-resize {
+	cursor: w-resize;
+}
+.wait {
+	cursor: wait;
+}
+.zoom-in {
+	cursor: zoom-in;
+}
+.zoom-out {
+	cursor: zoom-out;
+}

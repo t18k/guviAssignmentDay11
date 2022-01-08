@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#printHere,
+			#val,
+			#binary,
+			#contentEdit {
+				font-size: large;
+			}
+			#promptPrint {
+				text-align: center;
+				color: red;
+				border: 5px solid black;
+			}
+			.center {
+				margin: auto;
+				width: 80%;
+			}
+			.footer {
+				margin-top: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="center">
+			<h1 id="colourChange">1.HOVER HERE TO SEE COLOR CHANGE</h1>
+			<h1>2.Input from prompt is displayed here:</h1>
+			<h1 id="promptPrint"></h1>
+			<h1 id="clickevent">3.Click here to get X,Y value</h1>
+			<span id="printHere" style="font-size: large"></span
+			><br /><br /><br />
+			<h1><b>4.Character Count in console</b></h1>
+			<input type="text" id="textInput" /><br /><br />
+			<h1>5.Decimal to Binary</h1>
+			<h3>Please enter a number:</h3>
+			<input id="decimal" /><br /><br />
+			<button type="button" onclick="convertToBinary()">Submit</button>
+			<p id="binary"></p>
+			<h1>6.Form validation</h1>
+			<h3>Please input a number between 1 and 10:</h3>
+			<input id="numb" /><br /><br />
+			<button type="button" onclick="validation()">Submit</button>
+			<p id="val"></p>
+			<video width="50%" controls id="myvideo">
+				<source src="rain.mp4" type="video/mp4" />
+				<source src="rain.ogg" type="video/ogg" />
+				Your browser does not support the video tag.
+			</video>
+			<h1>7.Video</h1>
+			<button onclick="fullscreen()">Full Screen</button>
+			<h1>8.Spacebar</h1>
+			<h3>Please enter an input and submit:</h3>
+			<input id="space" /><br /><br />
+			<button type="button" onclick="spacebar()">Submit</button>
+			<h1>9.contenteditable</h1>
+			<div class="contentEdit" contenteditable="true">
+				<h3>This text can be edited by the user.</h3>
+			</div>
+			<div class="footer"></div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
